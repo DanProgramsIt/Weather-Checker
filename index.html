@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Weather Checker</title>
@@ -18,10 +19,34 @@
         <h1 class="display-3 lead">Weather Checker</h1>
     </header>
 
-
-
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
- <script src="./assets/js/weather.js"></script> 
+    <main class="container-fluid flex-row">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <form id="city-form">
+                    <h3 for="citySearch">Select your City</h3>
+                    <input id="city" type="text">
+                    <button id="searchCity" type="submit" class="btn btn-primary"><span class="oi oi-cloud"></span></button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <ul id="list-City" class="list-group"></ul>
+        </div>
+        <div class="col-12 col-md-9">
+            <div id="Information">
+                <h2><span id="showWeather"></span></h2>
+                <div id="weatherInfo"></div>
+            </div>
+        </div>
+        <div>
+            <h2 id="fiveCast"></h2>
+            <div id="forecast">
+                <div id="entireDay" class="row"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/weather.js"></script>
 </body>
+
 </html>
