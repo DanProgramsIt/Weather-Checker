@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+    color: rgba(27, 29, 150, 0.993); 
+    padding: 18px ;
+    margin: 0px 0px 15px;
+  }
+
+  .lead,#City,form h3,#fiveCast,.currentStyle {
+    font-weight: bold;
+    color: rgb(234, 250, 8); 
+    text-shadow: rgb(211, 71, 188) 2px 2px 3px;
+ }
+
+ .justify-space-around {
+    justify-content: space-between;
+  }
+
+  .card {
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-width: 5px;
+    border-color: rgba(27, 29, 150, 0.993);
+    padding: 30px 20px ;
+  }
+
+  .card p {
+    font-size:25px ;
+}
+
+.col-md-2 {
+    background-color:rgba(27, 29, 150, 0.993);
+    border: 1px solid rgba(0,0,0,.125);
+    border-width: 5px;
+    border-color: rgba(27, 29, 150, 0.993);
+  }
+
+  .currentStyle {
+    font-size: 30px;   
+    font-weight: bold;
+  }
+
+  .currentStyle P {
+    font-size: 25px;
+  }
+
+  .input {
+    width: 40px;
+  }
+
+  .dateForecast {
+    color: rgb(234, 250, 8); 
+    text-shadow: rgb(211, 71, 188) 2px 2px 3px;
+    text-align: center;
+  }
+
+  p {
+    color: white
+   }
+
+   .forecast p {
+    font-size: 22px;
+    text-align:center;
+  }
+
+  .forecast {
+    border-radius: 5px;
+    padding-bottom: 15px;
+  }
+
+  .row {
+    margin-left: 0px;
+  }
+
+  #weatherInfo {   
+    background-color:gray; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #entireDay {
+    padding-bottom: 20px;
+  }
+
+  .imgDisplay {
+    display: block ;
+    margin-left: auto; 
+    margin-right: auto
+  }
+
+  .list-group-item {
+    border: 1px solid rgba(0,0,0,.125);
+    border-width: 2px;
+    border-color: rgba(27, 29, 150, 0.993);
+  }
