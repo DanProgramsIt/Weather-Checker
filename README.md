@@ -6,7 +6,7 @@ The website shows five day forecasts with temperature and humidity.
 
 ### Website home page:
 
- ![Homepage](/Assets/images/intro.jpg)
+ ![Homepage](/assets/images/Intro.jpg)
 
  
  _____________________________________________________________________
@@ -18,7 +18,7 @@ The website shows five day forecasts with temperature and humidity.
 The entered city will saved as a button below the search bar, if you search for too many citys you can click the red X to clear it all.
 If the person wants to see the weather for a previously searched city, they can click on the city button created under the search bar and the information will be displayed again.
 
-![](/Assets/images/1.jpg)
+![](/assets/images/1.jpg)
 
 
 >There is a UV Index parameter that shows the value together with a color that represents (green) Great!, (yellow) decent, or (red) Horrible!
