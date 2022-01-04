@@ -10,7 +10,7 @@ The website shows five day forecasts with temperature and humidity.
 
  
  _____________________________________________________________________
- Checkout the site! [](https://danprogramsit.github.io/Weather-Checker/)
+ Checkout the site! [Webpage](https://danprogramsit.github.io/Weather-Checker/)
 
 
 
