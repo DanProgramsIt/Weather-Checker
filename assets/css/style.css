@@ -85,7 +85,7 @@
     background-size: cover;
   }
 
-  #entireDay {
+  #fiveDays {
     padding-bottom: 20px;
   }
 
@@ -99,4 +99,9 @@
     border: 1px solid rgba(0,0,0,.125);
     border-width: 2px;
     border-color: rgba(27, 29, 150, 0.993);
+    
+  }
+
+  #clear.btn {
+    background-color:red
   }
