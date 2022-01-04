@@ -39,7 +39,7 @@ var ShowLocal = function () {
     }
 }
 
-
+// weather information
 function searchCurrent(city) {
     console.log("searchcurr:", city)
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
@@ -52,7 +52,7 @@ function searchCurrent(city) {
 
                         ShowLocal()
                     }
-
+                    // shows the current day and city
                     var dateCity = document.createElement("div");
                     var image = document.createElement("img")
                     var imageUrl = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
@@ -68,7 +68,7 @@ function searchCurrent(city) {
 
                     searchUV(data.coord.lat, data.coord.lon);
 
-
+                    // when searching, displays weather information.
                     howHot.textContent = "Temperature:" + " " + data.main.temp + " " + "ºF";
                     muggy.textContent = "Humidity:" + " " + data.main.humidity + " " + "%";
                     windS.textContent = "Wind" + " " + "Speed:" + " " + data.wind.speed + " " + "MPH";
@@ -89,7 +89,7 @@ function searchCurrent(city) {
         })
 }
 
-
+// function to show the UV stats
 function searchUV(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`)
         .then(function (response) {
@@ -127,7 +127,7 @@ function searchUV(lat, lon) {
             alert("Error UV" + error.statusText)
         })
 }
-
+// function to show the five day forcast
 function searchForecast(city) {
     console.log("searchForecast:", city)
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
@@ -143,7 +143,7 @@ function searchForecast(city) {
                     fiveCastEl.appendChild(titleforecast)
 
                     for (var i = 6; i < 39; i += 8) {
-
+                        // where your five day forcast comes from
                         var div = document.createElement("div")
                         var firstDT = document.createElement("p")
                         var firstDH = document.createElement("p")
@@ -176,7 +176,7 @@ function searchForecast(city) {
             alert("Error" + " " + error.statusText)
         })
 }
-
+// function for the city's you search
 var listcities = function (cityIn) {
 
     var firstC = document.createElement("button")
@@ -195,6 +195,7 @@ document.getElementById("list-City").addEventListener("click", function (event) 
 document.getElementById("searchCity").addEventListener("click", function (event) {
     event.preventDefault();
 
+    // searched city value and city name to me in all caps
     var cityIn = document.getElementById("city").value;
     document.getElementById("city").value = "";
 
