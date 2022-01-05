@@ -4,7 +4,7 @@
 >Hello and welcome to the Weather-Checker, this website is ment to show the weather in the city you search for. This site shows the weather by day, and up to five days later.
 The website shows five day forecasts with temperature and humidity.
 
-### Website home page:
+### Website front page:
 
  ![Homepage](/assets/images/Intro.jpg)
 
